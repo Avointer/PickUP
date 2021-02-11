@@ -1,0 +1,136 @@
+.bg-img {
+  background-image: url("../img/1.jpg");
+  min-height: 300px;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+body{
+  margin: 0;
+}
+
+.img-cover{
+  background-image: url("../img/Cover.jpg");
+  min-height: 300px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.imgcls{
+  display: inline-grid;
+  margin:2px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.imgcls::after {
+  content: "";
+  border-radius: 5px;
+  z-index: -1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.imgcls:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+.box:hover::after {
+    opacity: 1;
+}
+
+.imgcontainer{
+  text-align:left;
+  font-size: 20px;
+  display:inline;
+}
+
+.container {
+  left:20px;
+  top:20px;
+  position: absolute;
+  margin: 20px;
+  width: auto;
+  z-index: 999;
+}
+
+.imgcls img{
+  width:305px;
+  height:370px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+h4 span { 
+   color: white; 
+   font:  24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+.text-block {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+h4 {
+  color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   padding: 10px;
+}
+
+.textcontainer{
+margin:auto;
+width:1000px;
+}
+
+h1 {
+  color: black;
+  font-size:25px;
+  letter-spacing: -1px;
+  padding: 8px;
+}
+.footer {
+  background: #092262;
+  padding: 20px;
+  text-align: center;
+  color:#fff;
+}
+.about-container {
+  padding:20px 0;
+  width:400px;
+  margin:auto;
+}
